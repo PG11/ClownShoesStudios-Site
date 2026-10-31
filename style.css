@@ -105,10 +105,10 @@ section + section { border-top: 1px solid var(--line); }
 @media (max-width: 860px) { .grid3 { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 560px) { .grid3 { grid-template-columns: 1fr; } }
 
-.shots { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 14px; }
+.shots { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+@media (max-width: 640px) { .shots { grid-template-columns: 1fr; } }
 .shots a { border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
 .shots a:hover { border-color: var(--cyan); }
-.shots figcaption { font-size: 0.85rem; color: var(--muted); padding: 8px 10px; background: var(--panel); }
 figure { margin: 0; }
 
 ul.ticks { list-style: none; padding: 0; margin: 0; }
